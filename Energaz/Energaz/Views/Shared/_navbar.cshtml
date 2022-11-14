@@ -1,0 +1,13 @@
+﻿<div class="app-container container-fluid d-flex align-items-stretch justify-content-between" id="kt_app_header_container">
+    <div class="card-header flex-wrap border-0 pt-4 pb-0">
+        @*<img src="~/assets/img/cgLogo.png" />*@
+        <h4>Cagrı Anket</h4>
+        <a href="@Url.Action("Logout", "Home")" class="btn btn-sm btn-info mt-2 mr-2" style="position:absolute;top:0;right:0">
+
+            <button class="btn btn-sm btn-light-info disabled" disabled>@Session["kullaniciAdi"]</button>
+            Çıkış Yap
+        </a>
+        @*@Session["kullaniciDurum"]<br />
+            @Session["kullaniciAdi"]*@
+    </div>
+</div>
